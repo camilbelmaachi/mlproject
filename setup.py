@@ -11,6 +11,7 @@ setup(name='mlproject',
       packages=find_packages(),
       test_suite = 'tests',
       # include_package_data: to install data from MANIFEST.in
+      install_requires = requirements,
       include_package_data=True,
-      scripts=['scripts/mlproject-run'],
+      scripts=['scripts/mlproject-run', 'scripts/mlproject-computedist'],
       zip_safe=False)
